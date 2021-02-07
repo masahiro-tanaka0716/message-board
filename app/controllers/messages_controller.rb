@@ -32,7 +32,7 @@ class MessagesController < ApplicationController
             redirect_to @message
         else
             flash.now[:danger] = 'Message は更新されませんでした。'
-            redirect_to @message
+            render :edit
         end
     end    
     
