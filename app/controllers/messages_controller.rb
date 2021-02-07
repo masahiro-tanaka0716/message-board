@@ -8,7 +8,7 @@ class MessagesController < ApplicationController
     end
     
     def new
-        @message = Message.new(content: 'sample')
+        @message = Message.new
     end
     
     def create
