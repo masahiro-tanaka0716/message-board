@@ -40,7 +40,7 @@ class MessagesController < ApplicationController
         @message.destroy
         
         flash[:success] = 'Message は正常に削除されました。'
-        redirect_to message_url
+        redirect_to messages_url
     end
 end
 
